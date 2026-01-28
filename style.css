@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #3b2a1a, #1e140c);
+  color: #f5e6c8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 480px;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e8d9b5;
+  margin-bottom: 25px;
+}
+
+.launch span {
+  display: inline-block;
+  border: 1px solid #d4af37;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.signup-form input {
+  flex: 1;
+  border: none;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.signup-form button {
+  border: none;
+  background: #d4af37;
+  color: #1e140c;
+  padding: 0 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-form button:hover {
+  background: #b8962e;
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  color: #d4af37;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.socials a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+.steam {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+  animation: steam 6s infinite ease-in-out;
+}
+
+@keyframes steam {
+  0% { transform: translate(-50%,0) scale(1); opacity: 0.3; }
+  50% { transform: translate(-50%,-30px) scale(1.1); opacity: 0.15; }
+  100% { transform: translate(-50%,0) scale(1); opacity: 0.3; }
+}
+
+.notify-btn:hover {
+  box-shadow: 0 0 25px rgba(212,175,55,0.6);
+}
